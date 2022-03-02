@@ -1,0 +1,31 @@
+/* 背景容器样式 */
+.container {
+  height: 100vh; /*高度为 100 视窗，写成 100% 无效*/
+  background-color:silver; /*背景颜色为银色*/
+  display: flex; /*flex布局模型*/
+  flex-direction: column; /*垂直布局*/
+}
+/* 列表组样式 */
+.listGroup {
+  background-color: white; /*背景颜色为白色*/
+  margin: 20rpx 0; /*上下外边距为20rpx，左右为0*/
+}
+/* 列表单行样式 */
+.listItem {
+  display: flex; /*flex布局模型*/
+  flex-direction: row; /*水平布局*/
+  align-items: center; /*垂直方向居中*/
+  border: 1rpx solid silver; /*1rpx宽的银色实线边框*/
+  padding: 10rpx; /*内边距10rpx*/
+}
+/* 图片尺寸 */
+image {
+  width: 80rpx; /*宽度*/
+  height: 80rpx; /*高度*/
+  margin: 0 15rpx; /*上下外边距为0，左右外边距为15rpx*/
+}
+/* 文本样式 */
+text {
+  font-size: 40rpx; /*字体大小为40rpx*/
+  flex-grow: 1; /*扩张多余空间宽度*/
+}

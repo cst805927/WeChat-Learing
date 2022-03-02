@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="listGroup">
+    <view class="listItem">
+      <image src="/images/moments.png"></image>
+      <text>朋友圈</text>
+      <image src="/images/arrow.png"></image>
+    </view>
+  </view>
+</view>
