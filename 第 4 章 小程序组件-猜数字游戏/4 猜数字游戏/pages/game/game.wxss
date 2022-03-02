@@ -1,0 +1,12 @@
+/* pages/game.wxss */
+/* 文本框 */
+input {
+  border:1rpx solid green;
+  margin: 30rpx 0; /*上下外边距30rpx，左右0rpx*/
+  height: 90rpx;
+  border-radius: 20rpx;
+}
+/* 提示框 */
+#tip {
+  height: 800rpx;
+}
