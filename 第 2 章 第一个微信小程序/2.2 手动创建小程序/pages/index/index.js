@@ -11,7 +11,6 @@ Page({
    */
   getMyInfo: function(e) {
     let info = e.detail.userInfo
-    console.log(info)
     this.setData({
       src: info.avatarUrl, //更新图片来源
       name: info.nickName //更新昵称
