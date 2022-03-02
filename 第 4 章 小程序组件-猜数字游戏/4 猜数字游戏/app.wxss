@@ -5,3 +5,7 @@
   height: 100vh; /*高度为100视窗*/
   justify-content: space-around; /*内容调整*/
 }
+text {
+  margin: 0 50rpx; /*左右外边距50rpx*/
+  line-height: 30pt; /*行高30pt*/
+}
