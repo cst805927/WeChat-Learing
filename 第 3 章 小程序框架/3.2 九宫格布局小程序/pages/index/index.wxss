@@ -1,0 +1,72 @@
+/* 1 背景容器样式 */
+.container {
+    height: 100vh;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+}
+/* 2 面板1：顶端状态栏 */
+.topPanel {
+    min-height: 300rpx;
+    background-color: #686F79;
+    display: flex;
+    flex-direction: row;
+}
+/* 2-1 面板1：方格样式 */
+.box1 {
+    display: flex;
+    flex-direction: column; /*垂直分布*/
+    align-items: center; /*水平方向居中*/
+    width: 33%;
+    height: 250rpx;
+}
+/* 2-2 面板1：方格内图标样式 */
+.box1 image {
+    width: 110rpx;
+    height: 110rpx;
+    margin: 20rpx;
+}
+/* 2-3 面板1：方格内文本样式 */
+.box1 text {
+    text-align: center;
+    color: white;
+    font-size: 35rpx;
+}
+/* 3 面板2：“腾讯服务”栏 */
+.servicePanel {
+    min-height: 600rpx;
+    background-color: white;
+    margin: 20rpx 0;
+}
+/* 3-1 面板2：第一行标题样式 */
+.serviceTitle {
+    padding: 20rpx;
+    border: 1rpx solid silver;
+    font-size: 30rpx;
+    color: gray;
+}
+/* 3-2 面板2：九宫格区域样式 */
+.serviceBlocks {
+    display: flex;
+    flex-direction: row; /*水平布局*/
+    flex-wrap: wrap; /*允许换行*/
+}
+/* 3-2-1 面板2：九宫格区域方格样式 */
+.box2 {
+    border: 1rpx solid silver;
+    display: flex;
+    flex-direction: column; /*垂直布局*/
+    align-items: center; /*水平方向居中*/
+    justify-content: center; /*垂直方向居中*/
+    width: 33%; /*宽度约占屏幕的1/3*/
+    height: 230rpx;
+}
+/* 3-2-2 面板2：方格内图标 */
+.box2 image {
+    width: 90rpx;
+    height: 90rpx;
+}
+/* 3-2-3 面板2：方格内文本 */
+.box2 text {
+    font-size: 30rpx;
+}

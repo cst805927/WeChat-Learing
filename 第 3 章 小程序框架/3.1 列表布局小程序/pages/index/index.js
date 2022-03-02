@@ -1,65 +1,49 @@
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
+    list: [
+      //第1组列表
+      [{
+        text: '朋友圈',
+        icon: '/images/moments.png'
+      }],
+      //第2组列表
+      [{
+          text: '扫一扫',
+          icon: '/images/scan.png'
+        },
+        {
+          text: '摇一摇',
+          icon: '/images/shake.png'
+        }
+      ],
+      //第3组列表
+      [{
+          text: '看一看',
+          icon: '/images/topStories.png'
+        },
+        {
+          text: '搜一搜',
+          icon: '/images/search.png'
+        }
+      ],
+      //第4组列表
+      [{
+          text: '购物',
+          icon: '/images/shopping.png'
+        },
+        {
+          text: '游戏',
+          icon: '/images/games.png'
+        }
+      ],
+      //第5组列表
+      [{
+        text: '小程序',
+        icon: '/images/miniProgram.png'
+      }]
+    ]
   }
 })

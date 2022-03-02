@@ -1,8 +1,15 @@
 <view class="container">
-  <view class="listGroup">
-    <view class="listItem">
-      <image src="/images/moments.png"></image>
-      <text>朋友圈</text>
+  <view class="listGroup" 
+  wx:for="{{list}}" 
+  wx:for-item="group" 
+  wx:key="group{{index}}">
+    <view class="listItem"
+    wx:for="{{group}}"
+    wx:for-item="row"
+    wx:key="row{{index}}">
+      <image class="icon"
+      src="{{row.icon}}"></image>
+      <text>{{row.text}}</text>
       <image src="/images/arrow.png"></image>
     </view>
   </view>

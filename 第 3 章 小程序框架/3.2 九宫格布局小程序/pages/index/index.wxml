@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="topPanel">
+        <view class="box1">
+            <image src="/images/top/money.png"></image>
+            <text>收付款</text>
+        </view>
+    </view>
+    <view class="servicePanel">
+        <view class="serviceTitle">
+            腾讯服务</view>
+        <view class="serviceBlocks">
+            <view class="box2">
+                <image src="/images/service/cardRepay.png"></image>
+                <text>信用卡还款</text>
+            </view>
+        </view>
+    </view>
+</view>
