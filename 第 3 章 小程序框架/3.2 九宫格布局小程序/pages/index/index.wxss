@@ -58,7 +58,7 @@
     flex-direction: column; /*垂直布局*/
     align-items: center; /*水平方向居中*/
     justify-content: center; /*垂直方向居中*/
-    width: 33%; /*宽度约占屏幕的1/3*/
+    width: 32%; /*宽度约占屏幕的1/3*/
     height: 230rpx;
 }
 /* 3-2-2 面板2：方格内图标 */
