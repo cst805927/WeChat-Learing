@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "vant-row": "/vant-weapp/dist/row/index",
+    "vant-col": "/vant-weapp/dist/col/index"
+  }
 }

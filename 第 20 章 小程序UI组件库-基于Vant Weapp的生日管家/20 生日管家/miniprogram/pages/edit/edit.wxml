@@ -1,2 +1,61 @@
-<!--pages/edit/edit.wxml-->
-<text>pages/edit/edit.wxml</text>
+<form>
+  <!-- 第1行 -->
+  <van-row>
+    <van-col span="6">
+      <label>姓名</label>
+    </van-col>
+    <van-col span="18">
+      <input name="name" placeholder="请输入姓名"></input>
+    </van-col>
+  </van-row>
+  <!-- 第2行 -->
+  <van-row>
+    <van-col span="6">
+      <label>性别</label>
+    </van-col>
+    <van-col span="18">
+      <radio-group name="gender">
+        <radio color="#DE6E6D" value="1" />男
+        <radio color="#DE6E6D" value="2" />女
+      </radio-group>
+    </van-col>
+  </van-row>
+  <!-- 第3行 -->
+  <van-row>
+    <van-col span="6">
+      <label>生日</label>
+    </van-col>
+    <van-col span="18">
+      <picker name="birthday" mode="date">
+        <view>{{date}}</view>
+      </picker>
+    </van-col>
+  </van-row>
+  <!-- 第4行 -->
+  <van-row>
+    <van-col span="6">
+      <label>电话</label>
+    </van-col>
+    <van-col span="18">
+      <input name="tel" type="number" placeholder="请输入联系电话"></input>
+    </van-col>
+  </van-row>
+  <!-- 第5行 -->
+  <van-row>
+    <van-col span="6">
+      <label>关系</label>
+    </van-col>
+    <van-col span="18">
+      <input name="relationship" placeholder="描述你们的关系"></input>
+    </van-col>
+  </van-row>
+  <!-- 第6行 -->
+  <van-row>
+    <van-col span="18" offset="3">
+      <button>保存记录</button>
+    </van-col>
+    <van-col span="18" offset="3">
+      <button>取消修改</button>
+    </van-col>
+  </van-row>
+</form>

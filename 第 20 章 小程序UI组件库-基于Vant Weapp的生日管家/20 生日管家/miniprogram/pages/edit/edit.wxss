@@ -1,1 +1,44 @@
-/* pages/edit/edit.wxss */
+/* 行布局 */
+van-row {
+  margin: 20rpx 20rpx;
+  text-align: center;
+}
+
+/* 文本标签 */
+label {
+  padding: 10rpx;
+  color: #de6e6d;
+  line-height: 80rpx;
+}
+
+/* 文本输入框 */
+input {
+  border: 1rpx solid #de6e6d;
+  width: 480rpx;
+  height: 80rpx;
+  border-radius: 20rpx;
+}
+
+/* 单选按钮 */
+radio-group {
+  width: 480rpx;
+  line-height: 80rpx;
+}
+
+/* 单选框 */
+radio {
+  margin: 0 20rpx;
+}
+
+/* 日期选择器中的view */
+picker view {
+  width: 480rpx;
+  line-height: 80rpx;
+}
+
+/* 按钮 */
+button {
+  margin: 20rpx;
+  background-color: #de6e6d;
+  color: white;
+}

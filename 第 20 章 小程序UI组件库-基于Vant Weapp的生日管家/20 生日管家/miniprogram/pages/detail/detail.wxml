@@ -1,2 +1,17 @@
-<!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<!-- 顶端头像和姓名 -->
+<view class="avatarBox">
+  <image src="/images/avatar/001.png"></image>
+  <view>测试好友</view>
+</view>
+<!-- 个人信息展示 -->
+<can-cell-group>
+  <van-cell title="性别" value="女" />
+  <van-cell title="生日" value="1991-10-10" />
+  <van-cell title="电话" value="1234567" />
+  <van-cell title="关系" value="同学" />
+  <van-cell title="距离出生已经" value="10076天" />
+  <van-cell title="距离下个生日还有" value="50天" />
+</can-cell-group>
+<!-- 按钮区域 -->
+<van-button block type="warning">修改</van-button>
+<van-button block type="danger">删除</van-button>

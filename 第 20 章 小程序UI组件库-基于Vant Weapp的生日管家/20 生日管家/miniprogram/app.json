@@ -7,5 +7,6 @@
   "window": {
     "navigationBarBackgroundColor": "#DE6E6D",
     "navigationBarTitleText": "生日管家"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
