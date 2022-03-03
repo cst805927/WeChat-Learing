@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e cloud1-9g732imq969535dd --n quickstartFunctions --r --project "C:\Users\KEVIN\Desktop\WeChat-Learing\第 20 章 小程序UI组件库-基于Vant Weapp的生日管家\20 生日管家" --report_first --report
