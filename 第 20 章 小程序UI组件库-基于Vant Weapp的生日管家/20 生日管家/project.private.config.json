@@ -63,13 +63,13 @@
         {
           "name": "edit",
           "pathName": "pages/edit/edit",
-          "query": "",
+          "query": "id=new",
           "scene": null
         },
         {
           "name": "detail",
           "pathName": "pages/detail/detail",
-          "query": "",
+          "query": "id=bf4a0bf26221813812a6e34f0459b05f&n2=64",
           "scene": null
         }
       ]

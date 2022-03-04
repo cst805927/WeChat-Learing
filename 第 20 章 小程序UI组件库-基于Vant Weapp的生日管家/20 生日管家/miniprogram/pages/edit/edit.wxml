@@ -1,11 +1,11 @@
-<form>
+<form bind:submit="onSubmit">
   <!-- 第1行 -->
   <van-row>
     <van-col span="6">
       <label>姓名</label>
     </van-col>
     <van-col span="18">
-      <input name="name" placeholder="请输入姓名"></input>
+      <input name="name" placeholder="请输入姓名" value="{{info.name}}"></input>
     </van-col>
   </van-row>
   <!-- 第2行 -->
@@ -15,8 +15,8 @@
     </van-col>
     <van-col span="18">
       <radio-group name="gender">
-        <radio color="#DE6E6D" value="1" />男
-        <radio color="#DE6E6D" value="2" />女
+        <radio color="#DE6E6D" value="1" checked="{{info.gender === '1'}}" />男
+        <radio color="#DE6E6D" value="2" checked="{{info.gender === '2'}}" />女
       </radio-group>
     </van-col>
   </van-row>
@@ -26,7 +26,7 @@
       <label>生日</label>
     </van-col>
     <van-col span="18">
-      <picker name="birthday" mode="date">
+      <picker name="birthday" mode="date" bind:change="dateChange" value="{{date}}">
         <view>{{date}}</view>
       </picker>
     </van-col>
@@ -37,7 +37,7 @@
       <label>电话</label>
     </van-col>
     <van-col span="18">
-      <input name="tel" type="number" placeholder="请输入联系电话"></input>
+      <input name="tel" type="number" placeholder="请输入联系电话" value="{{info.tel}}"></input>
     </van-col>
   </van-row>
   <!-- 第5行 -->
@@ -46,16 +46,16 @@
       <label>关系</label>
     </van-col>
     <van-col span="18">
-      <input name="relationship" placeholder="描述你们的关系"></input>
+      <input name="relationship" placeholder="描述你们的关系" value="{{info.relationship}}"></input>
     </van-col>
   </van-row>
   <!-- 第6行 -->
   <van-row>
     <van-col span="18" offset="3">
-      <button>保存记录</button>
+      <button form-type="submit">保存记录</button>
     </van-col>
     <van-col span="18" offset="3">
-      <button>取消修改</button>
+      <button bind:tap="cancelEdit">取消修改</button>
     </van-col>
   </van-row>
 </form>

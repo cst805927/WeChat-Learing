@@ -1,11 +1,15 @@
 <!-- “添加新朋友”按钮 -->
-<van-button type="default">添加新朋友</van-button>
+<van-button block type="default" bind:tap="addFriend">添加新朋友</van-button>
 <!-- 搜索框 -->
-<van-search placeholder="请输入搜索关键词" show-action bind:search="onSearch" bind:cancel="onCancel" />
+<van-search placeholder="请输入搜索关键词" show-action bind:change="onChange" bind:cancel="onCancel" />
 <!-- 好友列表 -->
-<van-card centered desc="06-23" title="小兔" thumb="/images/avatar/001.png">
-  <view slot="footer">
-    距离下个生日
-    <text style="color:red;font-weight: bold;">100天</text>
-  </view>
-</van-card>
+<block wx:for="{{friendsList}}" wx:key="_id">
+  <van-card centered desc="{{item.date}}" title="{{item.name}}" thumb-link="../detail/detail?id={{item._id}}&n2={{item.n}}" thumb="{{item.avatar}}">
+    <view slot="footer">
+      距离下个生日
+      <text style="color:red;font-weight: bold;">
+        {{item.n}}
+      </text>
+    </view>
+  </van-card>
+</block>

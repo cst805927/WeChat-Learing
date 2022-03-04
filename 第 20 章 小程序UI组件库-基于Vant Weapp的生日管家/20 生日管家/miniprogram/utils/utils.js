@@ -31,9 +31,9 @@ function dateDiff(sDate1, sDate2) {
   sDate1 = sDate1.replace(/-/g, '/')
   sDate2 = sDate2.replace(/-/g, '/')
   const oDate1 = new Date(sDate1)
-  const oDate2 = new Date(sDate1)
-  const iDays = parseInt((oDate1 - oDate2) / 1000 / 3600 / 24)
+  const oDate2 = new Date(sDate2)
   // 把相差的毫秒数转换为天数
+  const iDays = parseInt((oDate2 - oDate1) / 1000 / 3600 / 24)
   return iDays
 }
 // 计算距离下个生日还有多少天
